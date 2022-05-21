@@ -1,0 +1,161 @@
+ 
+<html amp>
+<head>
+ 
+<html amp>
+    <head>
+      <meta charset="utf-8">
+      <title>website</title>
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <!-- ## Setup -->
+      <!--
+        Import the `amp-sidebar` component.
+      -->
+      <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+      <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+      <link rel="canonical" href="<%host%>/components/amp-sidebar/">
+      <link rel="stylesheet" href="amp.css">
+      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+      <style amp-custom>
+        amp-sidebar {
+          width: 250px;
+          padding-right: 10px;
+        }
+        .amp-sidebar-image {
+          line-height: 100px;
+          vertical-align:middle;
+        }
+        .amp-close-image {
+           top: 15px;
+           left: 225px;
+           cursor: pointer;
+        }
+        li {
+          margin-bottom: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          list-style: none;
+        }
+        .previewOnly {
+          font-weight: bold;
+        }
+        #sidebar-right nav.amp-sidebar-toolbar-target-shown {
+            display: none;
+        }
+      </style>
+    </head>
+     
+    
+      <!-- ## Basic Usage -->
+      <!--
+        The `amp-sidebar` should be a direct child of the `<body>`. It must have a layout of `nodisplay`. The`amp-sidebar` may not contain any AMP Elements except for `amp-accordion`, `amp-img` and `amp-fit-text`. `amp-fit-text` expands or shrinks its font size to fit the content within the space given to in the menu.
+      -->
+      <div class="container">
+        <amp-sidebar id="sidebar" layout="nodisplay" side="right">
+          <amp-img class="amp-close-image" src="savetheearth.jpg" width="20" height="20" alt="close sidebar" on="tap:sidebar.close" role="button" tabindex="0"></amp-img>
+          <ul>
+            <li><a href="home.htm">Home </a></li>
+            <li><a href="aboutus.htm">About Us</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contactus.htm">Contact Us</a></li>
+          </ul>
+        </amp-sidebar>
+    </div>
+        <!-- ## Sidebar Actions -->
+        <!--
+        Click to toggle the sidebar.
+        -->
+        <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">Toggle sidebar</button>
+    
+        <!--
+        Click to open the sidebar.
+        -->
+        <button on="tap:sidebar.open" class="ampstart-btn caps m2">Open sidebar</button>
+    
+        <!--
+        Click to close the sidebar.
+        -->
+        <button on="tap:sidebar.close" class="ampstart-btn caps m2">Close sidebar</button>
+     
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  
+   <!--Section heading-->
+   <h2 class="h1-responsive font-weight-bold text-center my-4" id="h2">Contact us</h2>
+   <!--Section description-->
+   <p class="text-center w-responsive mx-auto mb-5" id="p1">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+       a matter of hours to help you.</p>
+
+   <div class="row">
+
+       <!--Grid column-->
+       <div class="col-md-9 mb-md-0 mb-5">
+           <form id="contact-form">
+
+               <!--Grid row-->
+               <div class="row">
+
+                   <!--Grid column-->
+                   <div class="col-md-6">
+                       <div class="md-form mb-0">
+                        <label for="name" class="class1">Your Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                       </div>
+                   </div>
+                   <!--Grid column-->
+
+                   <!--Grid column-->
+                   <div class="col-md-6">
+                       <div class="md-form mb-0">
+                        <label for="email" class="class1">Your email :</label>
+                           <input type="text" id="email" name="email" class="form-control" required>
+                          
+                       </div>
+                   </div>
+                   <!--Grid column-->
+
+               </div>
+               <!--Grid row-->
+
+               <!--Grid row-->
+               <div class="row">
+                   <div class="col-md-12">
+                       <div class="md-form mb-0">
+                        <label for="subject" class="class1">Subject:</label>
+                           <input type="text" id="subject" name="subject" class="form-control "  required>
+                         
+                       </div>
+                   </div>
+               </div>
+               <!--Grid row-->
+
+               <!--Grid row-->
+               <div class="row">
+
+                   <!--Grid column-->
+                   <div class="col-md-12">
+
+                       <div class="md-form">
+                            <label for="message" class="class1">Your Message:</label>
+                           <textarea type="text" id="message" required rows="2" class="form-control md-textarea"></textarea>
+                          
+                       </div>
+
+                   </div>
+               </div>
+               <!--Grid row-->
+
+           </form>
+<br><br>
+           <div class="text-center text-md-left">
+               <a class="btn btn-primary">Send</a>
+           </div>
+          
+   </div>
+
+</section>
+<!--Section: Contact v.2-->
+</html>

@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background: white;
+    width: 270px;
+    margin: 10px;
+    height: 400px;
+    margin-top: 260px;
+    border-radius: 15px;
+}
+.card-image{
+    background-color: aqua;
+    height: 170px;
+    margin-bottom:15px;
+    background-size:cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-1{
+background-image:url('recycle.jpg') ;
+}
+.card-2{
+    background-image: url('plant.jpg');
+}
+.card-3{
+   background-image:url('Volenteer.jpg') ;
+
+}
